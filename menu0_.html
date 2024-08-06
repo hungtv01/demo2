@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{list-style-type: none;}
+        /* #menu>ul{background-color: aqua;} */
+        /* #menu a{width: 100%; display: block; padding: 10px; text-decoration: none;} */
+        #menu ul li{position: relative;padding: 5px;}
+        #menu > ul>li{float: left;}
+        #menu >ul> li ul{
+                        top: 100%;
+                        left:0%;
+                        /* left: 0; */
+                        padding-left: 0px;
+                        width: 200px;
+                        }
+
+        #menu>ul, #menu>ul ul{background-color: gold; 
+            /* display: inline-block */
+        }
+        #menu>ul ul{position: absolute;}
+        #menu>ul > li ul, #menu>ul ul{  visibility: hidden;}
+        #menu>ul > li:hover > ul{visibility: visible;}
+   #menu>ul li:hover{background-color: aqua; color:red}
+        #menu::after{content: ''; clear: both; display: block;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header"></div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a>
+                    <ul>
+                        <li><a href="">Menu2-1</a></li>
+                        <li><a href="">Menu2-2</a></li>
+                        <li><a href="">Menu2-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a>
+                    <ul>
+                        <li><a href="">Link 4-1</a></li>
+                        <li><a href="">Link 4-2</a></li>
+                        <li><a href="">Link 4-3</a></li>
+                        <li><a href="">Link 4-4</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Link 5</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae laboriosam consectetur aliquam velit alias iste, magnam consequuntur adipisci eos, pariatur accusantium, dignissimos debitis aperiam ullam assumenda quod! Ad, distinctio voluptatibus.</div>
+            <div>Officiis ut deserunt veritatis sint pariatur sequi quod, quisquam corrupti ex consequuntur. Minima autem, voluptas a natus ex ullam libero officia modi aut excepturi, unde obcaecati nihil dignissimos perferendis atque.</div>
+            <div>Molestiae sed animi iste quidem ipsum obcaecati dolore asperiores iusto eius aperiam deserunt autem quasi consectetur eum id sit itaque at nemo, dolorum suscipit earum harum eaque, illum quaerat. Harum.</div>
+            <div>Iste error nobis voluptatem sed commodi assumenda consequatur labore totam explicabo obcaecati recusandae, voluptatum quasi? Ipsam corporis a, tenetur necessitatibus saepe quibusdam aliquam? Dolores pariatur culpa hic possimus facere delectus.</div>
+            <div>Optio inventore eius sint velit, quo quos pariatur natus nobis error labore expedita possimus molestias dolor dignissimos praesentium, hic consequatur enim. Alias magni sint est eos eum aperiam. Amet, deleniti.</div>
+        </div>
+    </div>
+</body>
+</html>
